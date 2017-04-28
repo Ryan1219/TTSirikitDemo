@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="TTSiriKitIntentsUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start work" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4u-XF-DEg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="dfb-9d-j5H"/>
+                                    <constraint firstAttribute="height" constant="24" id="zD4-RJ-qbn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="体温曲线图" translatesAutoresizingMaskIntoConstraints="NO" id="D22-3b-mUT">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ho3-cj-IiH"/>
+                                    <constraint firstAttribute="height" constant="100" id="bOl-rq-zkS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Use Siri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zee-cf-6rQ">
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D22-3b-mUT" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="N81-ae-eq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zee-cf-6rQ" secondAttribute="trailing" constant="20" id="PSw-lp-OcK"/>
+                            <constraint firstItem="D22-3b-mUT" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="VWQ-7S-IUt"/>
+                            <constraint firstItem="zee-cf-6rQ" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="20" id="Zw9-AF-gSa"/>
+                            <constraint firstItem="D4u-XF-DEg" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="bO2-SO-89w"/>
+                            <constraint firstItem="D22-3b-mUT" firstAttribute="top" secondItem="zee-cf-6rQ" secondAttribute="bottom" constant="2" id="gS7-23-Dnj"/>
+                            <constraint firstItem="D4u-XF-DEg" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="nUi-vu-IFY"/>
+                            <constraint firstItem="zee-cf-6rQ" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="topMargin" id="nou-p5-Ma6"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32" y="60"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="体温曲线图" width="640" height="1136"/>
+    </resources>
+</document>
